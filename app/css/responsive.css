@@ -1,0 +1,344 @@
+/* ========== Responsive Styles ========== */
+
+/* Desktop to tablet (max-width: 1080px) */
+@media screen and (max-width: 1080px) {
+  header nav ul li {
+    margin-right: 20px;
+  }
+  .about-section .row .col ul li {
+    margin-bottom: 6px;
+  }
+  .about-section .row .col .btn {
+    margin-top: 15px !important;
+  }
+  .placement-overview .row .col {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .achievement-section .row .col .counter-list {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .teacher-section .team-slider .slick-prev,
+  .testimonial-section .testi-wrapper .slick-prev,
+  .course-section .course-slider .slick-prev {
+    left: 20px;
+  }
+
+  .teacher-section .team-slider .slick-next,
+  .testimonial-section .testi-wrapper .slick-next,
+  .course-section .course-slider .slick-next {
+    right: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .announcement-section .row .col {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .user-detail {
+    display: none;
+  }
+  .banner-text {
+    padding: 120px 0;
+  }
+  .about-section .row .col {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header nav {
+    display: none;
+  }
+
+  header .toggle-button {
+    display: block;
+  }
+
+  header .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 280px;
+    height: 100vh;
+    padding: 80px 20px 20px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    box-shadow: 2px 0 25px rgba(0, 0, 0, 0.15);
+    overflow-y: auto;
+    transition: left 0.4s ease-in-out;
+    z-index: 999;
+    border-right: 1px solid rgba(33, 191, 218, 0.2);
+  }
+
+  header .mobile-menu.active {
+    left: 0;
+  }
+
+  header .mobile-menu .logo {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  header .mobile-menu .logo img {
+    max-width: 150px;
+  }
+
+  header .mobile-menu ul li {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 12px 0;
+  }
+
+  header .mobile-menu ul li:last-child {
+    border-bottom: none;
+  }
+
+  header .mobile-menu ul li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+  }
+
+  header .mobile-menu ul li a:hover {
+    color: #21bfda;
+    padding-left: 8px;
+    border-radius: 6px;
+  }
+
+  header .mobile-menu ul li a.active {
+    padding: 10px;
+    border-radius: 6px;
+  }
+
+  header .mobile-menu .dropdown > a i {
+    transition: all 0.3s ease-in-out;
+  }
+
+  header .mobile-menu .dropdown.active > a i {
+    transform: rotate(180deg) !important;
+    color: #21bfda;
+  }
+
+  header .mobile-menu .submenu {
+    display: none;
+  }
+  header .mobile-menu .dropdown:hover .submenu {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+  }
+
+  header .mobile-menu .submenu {
+    overflow: hidden;
+    padding-left: 15px;
+    margin-top: 5px;
+    border-radius: 4px;
+    transition: all 0.4s ease-in-out;
+  }
+
+  header .mobile-menu .submenu li {
+    padding: 10px 0;
+  }
+
+  header .mobile-menu .dropdown.active .submenu {
+    max-height: 500px;
+    padding: 10px 15px;
+  }
+
+  @keyframes slideIn {
+    from {
+      left: -100%;
+    }
+    to {
+      left: 0;
+    }
+  }
+
+  @keyframes slideOut {
+    from {
+      left: 0;
+    }
+    to {
+      left: -100%;
+    }
+  }
+
+  header .toggle-button.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  header .toggle-button.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  header .toggle-button.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  .placement-overview .row .col,
+  .announcement-section .row .col-left,
+  .announcement-section .row .col-right,
+  .about-section .row .col,
+  .achievement-section .row .col,
+  .teacher-section .row .col {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .achievement-section .row .col .counter-data {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  footer .row,
+  .event-section .row,
+  .blog-section .row {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .announcement-section .announcement-box ul li {
+    font-size: 13px;
+  }
+
+  .announcement-section .row .col-left {
+    padding: 14px;
+  }
+
+  .login-page form,
+  .register-page form {
+    padding: 20px 15px;
+  }
+  .banner-text {
+    padding: 90px 0;
+  }
+  h1 {
+    font-size: 36px;
+    line-height: 52px;
+  }
+  .course-section .col {
+    margin-right: 0px;
+  }
+
+  .course-section .course-slider .slick-arrow {
+    background-color: transparent;
+    border: 1px solid #0bcaf5;
+    color: #0bcaf5;
+  }
+  .teacher-section .team-slider .slick-arrow {
+    background-color: transparent;
+    border: 1px solid #f9f9f9;
+    color: #f9f9f9;
+  }
+
+  .event-section .row,
+  .blog-section .row {
+    grid-template-columns: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header .logo img {
+    height: 80px;
+  }
+
+  .mobile-menu {
+    width: 75%;
+  }
+
+  .toggle-button span {
+    width: 20px;
+  }
+  .banner-text p {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 10px 0;
+  }
+  .announcement-section,
+  .placement-overview {
+    padding: 20px 0;
+  }
+  .placement-overview .recent-news {
+    flex-direction: column;
+  }
+  .placement-overview .recent-news .news-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  footer .row {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 16px;
+  }
+  h5 {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 6px 16px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  header .desktop-nav {
+    display: none;
+  }
+
+  header .mobile-nav {
+    display: block;
+  }
+
+  header .user-detail {
+    display: none;
+  }
+
+  .toggle-button {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header .logo img {
+    height: 50px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header .logo img {
+    height: 40px;
+  }
+
+  .toggle-button span {
+    width: 20px;
+    height: 2px;
+  }
+}
