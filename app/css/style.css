@@ -53,6 +53,7 @@ header .fa-angle-down {
 /* ===== Desktop Dropdown ===== */
 
 header .dropdown-list ul.dropdown-menu {
+  width: 300px;
   background-color: #fff;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 4px;
